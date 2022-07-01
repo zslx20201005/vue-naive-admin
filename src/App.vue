@@ -13,14 +13,14 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-import AppProvider from "@/components/AppProvider/index.vue";
+import { onMounted } from 'vue'
+import AppProvider from '@/components/AppProvider/index.vue'
 
 onMounted(() => {
-  $loadingBar.start();
+  $loadingBar.start()
   setTimeout(() => {
-    $loadingBar.finish();
-    $message.success("加载完成，Perfect~");
-  }, 500);
-});
+    $loadingBar.finish()
+    $message.success('加载完成，Perfect~')
+  }, 500)
+})
 </script>
